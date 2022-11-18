@@ -1,0 +1,256 @@
+Day #3
+C Language:- C progamming language is considered as the base of other programming language. C language 
+            is developed by Dennis M Ritchie. 
+             1 - Mother language:- C#,C++,Java
+			 2 - System Programming Language :- Jin programming language ka use system software banane ke 
+			                                    liye kiya jata hai unhe system programming language kahte hai. 
+	        3 - Procedural Langauge :- Procedural programming langauge wo langaugehota hai jo step by step 
+			                           run karta hai.
+			                           Procedural programming language - functions, data structure etcs
+	        4 - Structured Programming langauge :- Ye procedural programming language ka subset hota hai. 
+			                                       Isme hamre program parts /blocks main break hote hai.
+	        5 - mid level language :- Q ki ye low level aur high level dono programming language ke features ko
+                                      ko support karta hai isiliye ise mid level programming language kaha jata 
+									  hai.
+------------------------------------>
+History of C Language:-
+Dennis M Ritchie,1972, Bell laboratories ke AT&T(American Telephone & Telegraph) in U.S.A.
+
+ALGOL - 1960
+BCPL - 1967
+B - 1970
+Traditional C - 1972
+
+C koi unix operating system main use karne ke liye banaya gaya tha.
+
+----------------------------------------------------------------------------------------------------------
+Day #4
+
+Features of c progamming language :-
+1 - Simple
+2 - Portable
+3 - Mid Level
+4 - Structured
+5 - Rich Library
+6 - Extensible
+7 - Recursion
+8 - Pointer
+9 - Faster
+10 - Memory Management
+
+1 - Simple :- ye simple language hai q ki isme structured programming hoti hai aur ye understable 
+              hai.
+
+2 - Portable - ye different machine/operating system pr execute ho sakta hai. C ek machine independent language
+               hai.
+
+3 - Mid Level :- ye low level programming language ki kuch property ko intended karta hai saath hi
+                 ye hight level ke features ko bhi support karta hai.			
+
+4 - Structured :- program ka functions main bata hona.
+
+5 - Rich Library :- isme pahle se bahut se inbuilt function hote hai.
+
+6 - Extensible :- can easily adopt new features
+
+7 - Recursion :- calling the function into a function. function ke andar function ko call kaerna karna
+                 recursion kahlata hai.
+				 
+8 - Pointer :- pointer c langage ka ek special feature hai jo hume memory
+               se directly interect karne main help karta hai.
+			   
+9 - Faster :- q ki isme inbuilt fnction hote hai. jo iske compilation and execution time ko fast karte hai.
+
+10 - Memory Management:- q ki c language dynamic memory allocation support karta hai.
+                          Isme memory ko kabhi bhi free() call karke clear kara sakte hai.
+						  
+----------------------------------------------------------------------------------------------------------
+Day #5
+Topic - Compilation Process in c
+
+Question - What is compilation?
+Answer - Converting the source code into object code/machine code(Object code file contain karta hai machine readable
+         instruction ko ye cpu ke dwara process hota hai phir hume result deta hai.)
+
+Compilation ke process ko 4 parts main divide kiya gaya hai:-
+1 - pre-processing -> preprocessor
+2 - Compiling -> compiler
+3 - Assembling -> Assembler
+4 - Linking -> Linker
+		 
+
+                                         Source Code File
+										        |
+										 Preprocessor(expanded code)
+										        |
+										 Compiler(Assembly Code)
+										        |
+										 Assembler(Object Code)
+										        |
+							Linker(Object code+Libraries+other object file)
+							                    |
+											  Loader
+							                    |
+										 Executable Code File
+										 
+										 
+----------------------------------------------------------------------------------------------------------
+Day #6
+
+1 - Preprocessor :- Preprocessor source code ko expend karta hai aur expend karne ke baad 
+                    ye expended code compiler ke pass send karta.
+ 
+                    Source Code in C :- source code text editor main likha gaya ek file hota
+                                        hai jiska extension .c hota hai.					
+
+2 - Compiler :- expanded/pre-processed code ko compiler assembly code main convert 
+                kr deta hai
+				
+3 - Assembler :- Assembly code ko machine/object code main change kr deta hai.
+                 DOS main extension ".obj" and UNIX main "o".
+				 
+4 - Linker :- linker humare object code ke saath dusre libraries aur object files ko
+               add karke ek executable file ready karta hai. jo humare system pr run
+			   hota hai.
+			   DOS main executable file ka extension ".exe" aur UNIX ".out".
+			   
+----------------------------------------------------------------------------------------------------------
+Day #7
+Topic:- printf() & scanf()
+
+printf() aur scanf() c langauge main output aur input ke liye use kiye jane wale function hai. Ye dono
+inbuilt function hai. Aur ye stdio.h header file main defined hai.
+			   
+printf():- printf() function ka use output ke liey karte hai. Ye isme diye huye statement ko as it is
+           print kr deta hai.
+		   
+		   Syntax:-printf("Formate string",argument_list);
+		   Some example of formate string:- %d(integer), %c(character), %s(string), %f(float) etc.
+		   
+scanf():- scanf() function ka use input ke liye karte hai. Ye read karta hai humare dwara console pr 
+          diye gaye input ko.
+		  
+		  Syntax:-scanf("Formate string",argument_list);
+		 
+----------------------------------------------------------------------------------------------------------
+Day #8
+Topic:- Variable 
+variable memory main location ka naam hota hai. Iska use data store karne ke liye kiya jata hai. 
+Iska value change kiya ja sakta hai aur kai baar use bhi kiya ja sakta hai.
+Ye memory main location ko show karne ka symbolic method hai.
+
+Syntax :- data_type variable_name1,variable_name1,variable_name1;
+
+example :- int magneters,aadarsh,pupu,pullu;
+            int magneters;
+			int aadarsh01_;
+
+-> Rules of defining variables :-
+1 - variable main alphabets, digits, underscore ho sakta hai.
+2 - variable number se start nahi ho sakta.
+3 - whitespace allow nahi hai variable main.
+4 - Variable ka naam reserved keyword nahi ho sakta.
+
+-> Types of variable:- c main variables bahut se type ke hote hai.
+
+1 - local variable :- jo function ya block ke andar define ho.
+                      isko dusre function main use nahi kiya ja sakta hai.
+
+2 - Global variable :- jo function ya block ke bahar define go.
+                        isko dusre function main use kiya ja sakta hai.
+
+3 - Static Variable :- Jo static keyword ke saath define ho.
+
+4 - externel variable :- jo dusre source file main se ho.
+                          external variable use karne ke liye extern keyword ka use karte hai.
+
+----------------------------------------------------------------------------------------------------------
+Day #8
+Topic:- Data types in c
+	data type batata hai ki humara variable kis type ka data store karega.
+	Example :- integer, floating, character etc.
+
+Types of data in C:- 
+1 - Basic data type-  int, char, float, double
+2 - Derived data type- array, pointer, structure, union
+3 - Enumeration data type- enum
+4 - Void data type - void
+
+1 - Basic data type - basic data type integer aur floating point based hote hai. C language  main signed 
+                      aur unsigned dono type ke data support karte hai.
+					  Inka memory size operatinig system ke hisaab se alag alag hota hai.
+					  32-bit & 64-bit
+					  
+    i - integer :- interger data type whole number ko store karta hai bina decimal value ke.
+	               Octal,hexadecimal and decimal value ko integer main store kar sakte hai.
+				   range:-  -2147483648 to 2147483647
+				   size:- 2 byte ya 4 byte
+				   Formate Specifier:- %d
+				   
+----------------------------------------------------------------------------------------------------------
+Day #10
+   ii - character data type:- char data type main hum sirf single character hi store kr sakte hai. Iska storage size 
+                              size 1 byte hota hai.
+							  ex- char a,char q
+							  range:-(-128 tp 127) or 255
+							  size:- 1 Byte
+							  Formate Specifier:- %c
+
+    iii - Floating Point Type:- float data type ka usedecimal values aur exponential values
+	                             ko store karne ke liye kiya jata hai.
+								 ex - float a,float aadarsh etc
+								 
+								 **************************Range:-
+								 Size :- 4 Byte
+								 Formate Specifier:- %f
+						
+	iv - Double data type :-  Just same as floating point data type but it store more values than floating data type.
+	
+	                            **************************Range:-
+								Size :- 8 bytes
+								Formate specifier:- %lf
+
+
+
+----------------------------------------------------------------------------------------------------------
+Day #11
+Topic :- Keywords
+
+      A keyword is  a reserved word. We can not use it as a variable name, constant name etc.
+	  There are 32 keywords in c language.
+	  
+	  1 - auto - ye automatic variables ko declare karta hai.
+	  
+	  2 - break & continue - break statement loop ko immediately terminate kr deta hai. Ye switch ke saath bhi use hota  hai.
+	                         ye innermost loop main hota hai.
+							 
+							 Continue loop main ek perticular cindition ko true rakhte huye loop ko skip kr deta hai.
+	
+	 3 - Switch, case & default - Switch aur case ka use tb karte hai jb bahut se condition diye ho aur unse se koi ek condition
+	                              execute karna ho.
+	
+	 4 - char - char keywordka use character variable declare karne ke liye kiya jata hai.
+	 
+	 5 - const - iska use karke constant identifier declarekiya jata hai.
+	 
+	 6 - do while - ye ek loop hai.
+	 
+	 7 - double float
+	 
+	 8 - if else - decision making ke liye inka use hota hai.
+	 
+	 9 - enum - 
+	 10 - extern -
+	 11 - for -
+	 12 - goto -
+	 13 - int -
+	 14 - short,long,signed,unsigned
+	 15 - return - 
+	 16 - sizeof
+	 17 - register
+	 18 - static
+	 19 - struct 
+	 20 - typedef
+	 21 - union
+	 22 - void
+	 23 - volatile 
